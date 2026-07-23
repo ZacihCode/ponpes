@@ -1,0 +1,135 @@
+.header {
+  background: linear-gradient(135deg, #a70e13 0%, #f4c430 100%);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Main Content */
+.main-content {
+  padding: 3rem 0;
+}
+
+/* Organizational Structure */
+.org-structure {
+  margin-bottom: 4rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.org-structure h2 {
+  text-align: center;
+  color: #dd6e06;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.structure-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.structure-level {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.structure-level.anggota-ostdaqu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.top-level,
+.bottom-level {
+  justify-content: center;
+}
+
+.connector {
+  width: 4px;
+  height: 40px;
+  background: linear-gradient(to bottom, #1a5f7a, #57cc99);
+  position: relative;
+}
+
+.connector.branched::before,
+.connector.branched::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background: linear-gradient(to right, #1a5f7a, #57cc99);
+  top: 50%;
+}
+
+.connector.branched::before {
+  left: -40px;
+}
+
+.connector.branched::after {
+  right: -40px;
+}
+
+.position-card {
+  background: white;
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  flex: 1 1 200px;
+  max-width: 220px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.position-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.position-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.position-card h3 {
+  color: #dd6e06;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.position-card p {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-bottom: 0.5px;
+}
+
+.animated-section {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  display: none;
+}
+.animated-section.show {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}

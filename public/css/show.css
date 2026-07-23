@@ -1,0 +1,329 @@
+/* ============================================
+   CSS untuk halaman detail & list berita
+   Tambahkan ke file CSS utama kamu
+   ============================================ */
+
+/* ---------- Hero Gambar ---------- */
+.berita-hero {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+}
+
+.berita-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.berita-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 40%, rgba(0, 0, 0, 0.55) 100%);
+}
+
+/* ---------- Section Wrapper ---------- */
+.berita-detail-section {
+    padding: 48px 0 80px;
+}
+
+.container-berita-detail {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ---------- Breadcrumb ---------- */
+.berita-breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px 6px;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 32px;
+}
+
+.berita-breadcrumb a {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.berita-breadcrumb a:hover {
+    color: var(--color-primary, #1a7a4a);
+}
+
+.berita-breadcrumb .sep {
+    color: #ccc;
+}
+
+/* ---------- Layout: Artikel + Sidebar ---------- */
+.berita-detail-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 48px;
+    align-items: start;
+}
+
+@media (max-width: 900px) {
+    .berita-detail-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .berita-hero {
+        height: 260px;
+    }
+}
+
+/* ---------- Artikel ---------- */
+.berita-article-header {
+    margin-bottom: 28px;
+}
+
+.berita-article-header .news-date {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 12px;
+}
+
+.berita-detail-title {
+    font-size: clamp(22px, 3vw, 32px);
+    font-weight: 700;
+    line-height: 1.35;
+    color: #1a1a1a;
+    margin-bottom: 14px;
+}
+
+.berita-detail-excerpt {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.7;
+    font-style: italic;
+    margin: 0;
+}
+
+.berita-divider {
+    border: none;
+    border-top: 2px solid #f0f0f0;
+    margin: 24px 0;
+}
+
+/* ---------- Body Konten ---------- */
+.berita-article-body {
+    font-size: 16px;
+    line-height: 1.85;
+    color: #333;
+}
+
+.berita-article-body p {
+    margin-bottom: 1.2em;
+}
+
+/* ---------- Footer Artikel ---------- */
+.berita-article-footer {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* Tombol Share */
+.berita-share {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.share-label {
+    font-size: 13px;
+    color: #888;
+}
+
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 18px;
+    text-decoration: none;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.share-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.85;
+}
+
+.share-wa { background: #25d366; color: #fff; }
+.share-fb { background: #1877f2; color: #fff; }
+.share-tw { background: #000; color: #fff; }
+
+/* Tombol Kembali */
+.btn-kembali {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 20px;
+    border: 1.5px solid #ddd;
+    border-radius: 999px;
+    font-size: 14px;
+    color: #444;
+    text-decoration: none;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.btn-kembali:hover {
+    background: #f5f5f5;
+    border-color: #ccc;
+}
+
+/* ---------- Sidebar ---------- */
+.berita-sidebar {
+    position: sticky;
+    top: 100px;
+}
+
+.sidebar-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.sidebar-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.sidebar-item {
+    display: flex;
+    gap: 12px;
+    text-decoration: none;
+    align-items: flex-start;
+    padding: 8px;
+    border-radius: 10px;
+    transition: background 0.2s;
+}
+
+.sidebar-item:hover {
+    background: #f7f7f7;
+}
+
+.sidebar-item-img {
+    flex-shrink: 0;
+    width: 72px;
+    height: 52px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.sidebar-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.sidebar-img-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    font-size: 20px;
+}
+
+.sidebar-item-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.sidebar-item-date {
+    font-size: 11px;
+    color: #999;
+    margin-bottom: 4px;
+}
+
+.sidebar-item-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ---------- Pagination ---------- */
+.berita-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.page-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #444;
+    text-decoration: none;
+    border: 1.5px solid #e0e0e0;
+    background: #fff;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.page-btn:hover {
+    background: #f5f5f5;
+    border-color: #ccc;
+}
+
+.page-btn-active {
+    background: var(--color-primary, #1a7a4a);
+    border-color: var(--color-primary, #1a7a4a);
+    color: #fff;
+    font-weight: 600;
+    cursor: default;
+}
+
+.page-btn-disabled {
+    color: #ccc;
+    border-color: #eee;
+    cursor: default;
+    background: #fafafa;
+}
+
+.page-btn-dots {
+    border: none;
+    background: transparent;
+    cursor: default;
+    color: #999;
+}
+
+/* ---------- Halaman List Berita (index) ---------- */
+.berita-list-section {
+    padding: 60px 0 80px;
+}
