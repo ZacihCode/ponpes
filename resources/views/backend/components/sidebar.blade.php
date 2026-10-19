@@ -17,24 +17,24 @@
 
                 <!-- ================= HOME ================= -->
                 @php
-                    $homeMenu =
-                        request()->routeIs('admin.carousel.*') ||
-                        request()->routeIs('admin.benefit.*') ||
-                        request()->routeIs('admin.benefit-image.*') ||
-                        request()->routeIs('admin.curiculum-section.*') ||
-                        request()->routeIs('admin.curiculum-item.*') ||
-                        request()->routeIs('admin.extracurriculars.*') ||
-                        request()->routeIs('admin.extracurricular-categories.*') ||
-                        request()->routeIs('admin.character-section.*') ||
-                        request()->routeIs('admin.character-carousel.*') ||
-                        request()->routeIs('admin.stats.*') ||
-                        request()->routeIs('admin.organisasi-santri.*');
+                $homeMenu =
+                request()->routeIs('admin.carousel.*') ||
+                request()->routeIs('admin.benefit.*') ||
+                request()->routeIs('admin.benefit-image.*') ||
+                request()->routeIs('admin.curiculum-section.*') ||
+                request()->routeIs('admin.curiculum-item.*') ||
+                request()->routeIs('admin.extracurriculars.*') ||
+                request()->routeIs('admin.extracurricular-categories.*') ||
+                request()->routeIs('admin.character-section.*') ||
+                request()->routeIs('admin.character-carousel.*') ||
+                request()->routeIs('admin.stats.*') ||
+                request()->routeIs('admin.organisasi-santri.*');
                 @endphp
 
                 <li class="nav-item has-treeview {{ $homeMenu ? 'menu-open' : '' }}">
 
                     <a href="#"
-                    class="nav-link {{ $homeMenu ? 'active' : '' }}">
+                        class="nav-link {{ $homeMenu ? 'active' : '' }}">
 
                         <i class="nav-icon fas fa-home"></i>
 
@@ -51,7 +51,7 @@
                         <li class="nav-item">
 
                             <a href="{{ route('admin.carousel.index') }}"
-                            class="nav-link {{ request()->routeIs('admin.carousel.*') ? 'active' : '' }}">
+                                class="nav-link {{ request()->routeIs('admin.carousel.*') ? 'active' : '' }}">
 
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Carousel</p>
@@ -64,7 +64,7 @@
                         <li class="nav-item">
 
                             <a href="{{ route('admin.benefit.index') }}"
-                            class="nav-link {{
+                                class="nav-link {{
                                     request()->routeIs('admin.benefit.*') ||
                                     request()->routeIs('admin.benefit-image.*')
                                         ? 'active'
@@ -82,7 +82,7 @@
                         <li class="nav-item">
 
                             <a href="{{ route('admin.curiculum-section.index') }}"
-                            class="nav-link {{ request()->routeIs('admin.curiculum-section.*') ? 'active' : '' }}">
+                                class="nav-link {{ request()->routeIs('admin.curiculum-section.*') ? 'active' : '' }}">
 
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Pendidikan</p>
@@ -103,10 +103,10 @@
                             </a>
 
                             <ul class="nav nav-treeview">
-                                
+
                                 <li class="nav-item">
                                     <a href="{{ route('admin.extracurricular-categories.index') }}"
-                                    class="nav-link {{ request()->routeIs('admin.extracurricular-categories.*') ? 'active' : '' }}">
+                                        class="nav-link {{ request()->routeIs('admin.extracurricular-categories.*') ? 'active' : '' }}">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Kategori Ekskul</p>
                                     </a>
@@ -114,7 +114,7 @@
 
                                 <li class="nav-item">
                                     <a href="{{ route('admin.extracurriculars.index') }}"
-                                    class="nav-link {{ request()->routeIs('admin.extracurriculars.*') ? 'active' : '' }}">
+                                        class="nav-link {{ request()->routeIs('admin.extracurriculars.*') ? 'active' : '' }}">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Data Ekskul</p>
                                     </a>
@@ -127,7 +127,7 @@
                         <li class="nav-item">
 
                             <a href="{{ route('admin.character-section.index') }}"
-                            class="nav-link {{ request()->routeIs('admin.character-section.*') ? 'active' : '' }}">
+                                class="nav-link {{ request()->routeIs('admin.character-section.*') ? 'active' : '' }}">
 
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Karakter</p>
@@ -140,7 +140,7 @@
                         <li class="nav-item">
 
                             <a href="{{ route('admin.stats.index') }}"
-                            class="nav-link {{ request()->routeIs('admin.stats.*') ? 'active' : '' }}">
+                                class="nav-link {{ request()->routeIs('admin.stats.*') ? 'active' : '' }}">
 
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Statistik</p>
@@ -153,7 +153,7 @@
                         <li class="nav-item">
 
                             <a href="{{ route('admin.organisasi-santri.index') }}"
-                            class="nav-link {{ request()->routeIs('admin.organisasi-santri.*') ? 'active' : '' }}">
+                                class="nav-link {{ request()->routeIs('admin.organisasi-santri.*') ? 'active' : '' }}">
 
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Organisasi</p>
@@ -167,16 +167,16 @@
                 </li>
 
                 <!-- ================= PROFIL ================= -->
-                 @php
-                    $sejarahMenu =
-                        request()->routeIs('admin.sejarah.*') ||
-                        request()->routeIs('admin.sejarah-images.*');
+                @php
+                $sejarahMenu =
+                request()->routeIs('admin.sejarah.*') ||
+                request()->routeIs('admin.sejarah-images.*');
                 @endphp
                 <li class="nav-item has-treeview
                     {{ $sejarahMenu ? 'menu-open' : '' }}">
 
                     <a href="#"
-                       class="nav-link
+                        class="nav-link
                        {{ $sejarahMenu ? 'active' : '' }}">
 
                         <i class="nav-icon fas fa-user"></i>
@@ -191,7 +191,7 @@
 
                         <li class="nav-item">
                             <a href="{{ route('admin.sejarah.index') }}"
-                               class="nav-link {{ request()->routeIs('admin.sejarah.*') ? 'active' : '' }}">
+                                class="nav-link {{ request()->routeIs('admin.sejarah.*') ? 'active' : '' }}">
 
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Sejarah</p>
@@ -203,11 +203,11 @@
 
                 <!-- ================= NEWS ================= -->
                 @php
-                    $newsMenu =
-                        request()->routeIs('admin.berita.*') ||
-                        request()->routeIs('admin.info-akademik.*') ||
-                        request()->routeIs('admin.info-santri.*') ||
-                        request()->routeIs('admin.alumni.*');
+                $newsMenu =
+                request()->routeIs('admin.berita.*') ||
+                request()->routeIs('admin.info-akademik.*') ||
+                request()->routeIs('admin.info-santri.*') ||
+                request()->routeIs('admin.alumni.*');
                 @endphp
                 <li class="nav-item has-treeview {{ $newsMenu ? 'menu-open' : '' }}">
 
@@ -224,7 +224,7 @@
                         {{-- Berita --}}
                         <li class="nav-item">
                             <a href="{{ route('admin.berita.index') }}"
-                            class="nav-link {{ request()->routeIs('admin.berita.*') ? 'active' : '' }}">
+                                class="nav-link {{ request()->routeIs('admin.berita.*') ? 'active' : '' }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Berita Pilihan</p>
                             </a>
@@ -232,11 +232,11 @@
 
                         {{-- Info Akademik (sub-treeview) --}}
                         @php
-                            $infoAkademikMenu = request()->routeIs('admin.info-akademik.*');
+                        $infoAkademikMenu = request()->routeIs('admin.info-akademik.*');
                         @endphp
                         <li class="nav-item">
                             <a href="{{ route('admin.info-akademik.index') }}"
-                            class="nav-link {{ request()->routeIs('admin.info-akademik.*') ? 'active' : '' }}">
+                                class="nav-link {{ request()->routeIs('admin.info-akademik.*') ? 'active' : '' }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Info Akademik</p>
                             </a>
@@ -245,7 +245,7 @@
                         {{-- Info Santri (placeholder) --}}
                         <li class="nav-item">
                             <a href="{{ route('admin.info-santri.index') }}"
-                            class="nav-link {{ request()->routeIs('admin.info-santri.*') ? 'active' : '' }}">
+                                class="nav-link {{ request()->routeIs('admin.info-santri.*') ? 'active' : '' }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Info Santri</p>
                             </a>
@@ -254,7 +254,7 @@
                         {{-- Info Alumni (placeholder) --}}
                         <li class="nav-item">
                             <a href="{{ route('admin.alumni.index') }}"
-                            class="nav-link {{ request()->routeIs('admin.alumni.*') ? 'active' : '' }}">
+                                class="nav-link {{ request()->routeIs('admin.alumni.*') ? 'active' : '' }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Info Alumni</p>
                             </a>
@@ -275,17 +275,6 @@
                     </a>
                 </li>
 
-                <!-- ================= PRODUK ================= -->
-                <li class="nav-item has-treeview">
-                    <a href="{{ route('admin.produk.index') }}" class="nav-link {{ request()->routeIs('admin.produk.*') ? 'active' : '' }}">
-                        <i class="nav-icon fas fa-shopping-cart"></i>
-
-                        <p>
-                            Produk
-                        </p>
-                    </a>
-                </li>
-
                 <!-- ================= PENDAFTARAN ================= -->
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
@@ -296,64 +285,6 @@
                         </p>
                     </a>
                 </li>
-
-                <!-- ================= DONASI ================= -->
-                <li class="nav-item has-treeview
-                    {{ request()->routeIs('admin.donasi.*') ? 'menu-open' : '' }}">
-
-                    <a href="#"
-                       class="nav-link
-                       {{ request()->routeIs('admin.donasi.*') ? 'active' : '' }}">
-
-                        <i class="nav-icon fas fa-donate"></i>
-
-                        <p>
-                            Donasi
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-
-                    <ul class="nav nav-treeview">
-
-                        <li class="nav-item">
-                            <a href="#"
-                               class="nav-link">
-
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Carousel Donasi</p>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="#"
-                               class="nav-link">
-
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Program Donasi</p>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="#"
-                               class="nav-link">
-
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Donasi Program</p>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="#"
-                               class="nav-link">
-
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Donasi Non Program</p>
-                            </a>
-                        </li>
-
-                    </ul>
-                </li>
-
             </ul>
         </nav>
 

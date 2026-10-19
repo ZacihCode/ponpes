@@ -3,8 +3,8 @@
         <div class="row">
             <!-- Brand -->
             <div class="col-lg-5 col-md-12 mb-4 footer-brand-section text-center text-lg-start">
-                <img src="{{ asset('images/logo2.jpg') }}" alt="Logo 2" class="footer-logo mb-2">
-                <p class="footer-text">Daarul Qur'an Al-Jannah</p>
+                <img src="https://cdn.aceimg.com/qZNAlMR03.png" alt="Logo 2" class="footer-logo mb-2">
+                <p class="footer-text">Assanadiyah</p>
                 <div class="footer-socials">
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-facebook"></i></a>
@@ -48,7 +48,7 @@
         <hr class="footer-divider">
 
         <p class="footer-copy text-center mt-3 mb-0">
-            &copy; 2025 Pondok Pesantren Tahfidz Daarul Qur'an Al-Jannah
+            &copy; 2025 Pondok Pesantren Assanadiyah
         </p>
     </div>
 </footer>

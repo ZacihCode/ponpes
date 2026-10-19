@@ -21,7 +21,7 @@ class Sejarah extends Model
 
     const TIPE_LABELS = [
         self::TIPE_PESANTREN => 'Sejarah Pesantren',
-        self::TIPE_YAYASAN => 'Sejarah Yayasan Al-Jannah Darussalam',
+        self::TIPE_YAYASAN => 'Sejarah Yayasan Assanadiyah',
     ];
 
     /**

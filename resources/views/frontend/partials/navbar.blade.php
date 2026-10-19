@@ -3,16 +3,16 @@
 
         <!-- LOGO -->
         <a class="navbar-brand" href="{{ url('/') }}">
-            <img src="{{ asset('images/logo-daqu.png') }}"
-                 alt="Logo Daarul Qur'an">
+            <img src="https://cdn.aceimg.com/qZNAlMR03.png"
+                alt="Logo Daarul Qur'an">
         </a>
 
         <!-- TOGGLER -->
         <button class="navbar-toggler border-0 shadow-none"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#mobileNavbar"
-                aria-controls="mobileNavbar">
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileNavbar"
+            aria-controls="mobileNavbar">
 
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,9 +30,9 @@
                 <li class="nav-item dropdown hover-dropdown">
 
                     <a class="nav-link dropdown-toggle"
-                       href="#"
-                       role="button"
-                       data-bs-toggle="dropdown">
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown">
 
                         Profil
                     </a>
@@ -51,12 +51,6 @@
                             </a>
                         </li>
 
-                        <li>
-                            <a class="dropdown-item" href="/daqu-method">
-                                Daqu Method
-                            </a>
-                        </li>
-
                     </ul>
                 </li>
 
@@ -64,9 +58,9 @@
                 <li class="nav-item dropdown hover-dropdown">
 
                     <a class="nav-link dropdown-toggle"
-                       href="#"
-                       role="button"
-                       data-bs-toggle="dropdown">
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown">
 
                         News
                     </a>
@@ -105,20 +99,10 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Pendaftaran</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcEETjlBN35niw77MvMrN6IipZndPxonbDfFXMOQUlo0smog/viewform?usp=dialog" class="nav-link">Pendaftaran</a>
                 </li>
 
             </ul>
-
-            <!-- BUTTON DONASI -->
-            <div class="d-flex align-items-center gap-2">
-                <a href="/produk" class="btn btn-keranjang" title="Produk Pesantren">
-                    <i class="fas fa-shopping-cart"></i>
-                </a>
-                <a href="#" class="btn btn-donasi">
-                    <i class="fas fa-donate"></i>
-                </a>
-            </div>
 
         </div>
 
@@ -130,19 +114,19 @@
 ========================= -->
 
 <div class="offcanvas offcanvas-start mobile-sidebar"
-     tabindex="-1"
-     id="mobileNavbar">
+    tabindex="-1"
+    id="mobileNavbar">
 
     <!-- HEADER -->
     <div class="offcanvas-header">
 
         <img src="{{ asset('images/logo-daqu.png') }}"
-             alt="Logo"
-             class="mobile-logo">
+            alt="Logo"
+            class="mobile-logo">
 
         <button type="button"
-                class="btn-close shadow-none"
-                data-bs-dismiss="offcanvas">
+            class="btn-close shadow-none"
+            data-bs-dismiss="offcanvas">
         </button>
 
     </div>
@@ -160,8 +144,8 @@
             <li class="nav-item">
 
                 <button class="mobile-dropdown"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#profilMenu">
+                    data-bs-toggle="collapse"
+                    data-bs-target="#profilMenu">
 
                     Profil
                     <i class="fas fa-chevron-down"></i>
@@ -177,11 +161,6 @@
                     <a href="/visi-misi" class="submenu-link">
                         Visi Misi
                     </a>
-
-                    <a href="/daqu-method" class="submenu-link">
-                        Daqu Method
-                    </a>
-
                 </div>
 
             </li>
@@ -190,8 +169,8 @@
             <li class="nav-item">
 
                 <button class="mobile-dropdown"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#newsMenu">
+                    data-bs-toggle="collapse"
+                    data-bs-target="#newsMenu">
 
                     News
                     <i class="fas fa-chevron-down"></i>
@@ -229,18 +208,6 @@
             </li>
 
         </ul>
-
-        <!-- BUTTON -->
-        <div class="d-flex gap-2 mt-4">
-            <a href="/produk" class="btn btn-keranjang-mobile">
-                <i class="fas fa-shopping-cart"></i>
-                Produk
-            </a>
-            <a href="#" class="btn btn-donasi-mobile">
-                <i class="fas fa-donate"></i>
-                Donasi
-            </a>
-        </div>
 
     </div>
 

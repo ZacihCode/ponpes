@@ -11,10 +11,10 @@
     height: 400px;
     background: linear-gradient(
         135deg,
-        #a70e13 0%,
-        #c84a1a 40%,
-        #e87a3a 75%,
-        #f4a56a 100%
+        #14532d 0%,
+        #166534 40%,
+        #15803d 75%,
+        #4d7c0f 100%
     );
     display: flex;
     align-items: center;
@@ -78,9 +78,16 @@
 }
 
 @keyframes alumniBlobDrift {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    33%       { transform: translate(15px, -20px) scale(1.05); }
-    66%       { transform: translate(-12px, 15px) scale(0.97); }
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+    33% {
+        transform: translate(15px, -20px) scale(1.05);
+    }
+    66% {
+        transform: translate(-12px, 15px) scale(0.97);
+    }
 }
 
 /* ---------- Ornamen bracket sudut ---------- */
@@ -160,8 +167,15 @@
 }
 
 @keyframes alumniDotPulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50%       { opacity: 0.3; transform: scale(0.6); }
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.3;
+        transform: scale(0.6);
+    }
 }
 
 .hero-alumni-title {
@@ -228,7 +242,9 @@
     font-weight: 700;
     border-radius: 24px;
     text-decoration: none;
-    transition: background 0.25s, transform 0.25s;
+    transition:
+        background 0.25s,
+        transform 0.25s;
     margin: 0 6px;
 }
 
@@ -249,7 +265,10 @@
     border: 1.5px solid rgba(255, 255, 255, 0.55);
     border-radius: 24px;
     text-decoration: none;
-    transition: border-color 0.25s, background 0.25s, transform 0.25s;
+    transition:
+        border-color 0.25s,
+        background 0.25s,
+        transform 0.25s;
     margin: 0 6px;
 }
 
@@ -262,8 +281,14 @@
 }
 
 @keyframes alumniHeroFadeUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to   { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ============================================================
@@ -345,7 +370,9 @@
     overflow: hidden;
     border: 0.5px solid #eee;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-    transition: transform 0.28s ease, box-shadow 0.28s ease;
+    transition:
+        transform 0.28s ease,
+        box-shadow 0.28s ease;
 }
 
 .alumni-card:hover {
@@ -471,7 +498,6 @@
    ============================================================ */
 
 @media (max-width: 768px) {
-
     .hero-section-alumni {
         height: auto;
         min-height: 420px;
@@ -490,11 +516,9 @@
     .section-alumni-title {
         font-size: 1.35rem;
     }
-
 }
 
 @media (max-width: 480px) {
-
     .hero-alumni-title {
         font-size: 1.45rem;
     }
@@ -509,5 +533,4 @@
         margin: 6px auto;
         width: fit-content;
     }
-
 }
