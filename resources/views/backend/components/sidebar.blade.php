@@ -54,7 +54,7 @@
                                 class="nav-link {{ request()->routeIs('admin.carousel.*') ? 'active' : '' }}">
 
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Carousel</p>
+                                <p>Slide Kegiatan</p>
 
                             </a>
 
@@ -72,7 +72,7 @@
                             }}">
 
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Benefit</p>
+                                <p>Fasilitas</p>
 
                             </a>
 

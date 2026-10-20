@@ -82,8 +82,6 @@ Route::get('/info-alumni', [NewsController::class, 'alumni'])
 //     return view('frontend.galeri');
 // });
 
-Route::get('/galeri', [FrontendGaleriController::class, 'index'])->name('galeri.index');
-
 // Route::get('/produk', function () {
 //     return view('frontend.produk');
 // });

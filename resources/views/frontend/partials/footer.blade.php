@@ -19,18 +19,16 @@
                     <div class="col-4 mb-4">
                         <h5 class="footer-title">Profil</h5>
                         <ul class="footer-links">
-                            <li><a href="#">Sejarah Pesantren</a></li>
-                            <li><a href="#">Visi dan Misi</a></li>
-                            <li><a href="#">Daqu Method</a></li>
+                            <li><a href="/sejarah">Sejarah Pesantren</a></li>
+                            <li><a href="/visi-misi">Visi dan Misi</a></li>
                         </ul>
                     </div>
 
                     <div class="col-4 mb-4">
                         <h5 class="footer-title">News</h5>
                         <ul class="footer-links">
-                            <li><a href="#">Berita Pilihan</a></li>
-                            <li><a href="#">Artikel</a></li>
-                            <li><a href="#">Info Akademik</a></li>
+                            <li><a href="/berita">Berita Pilihan</a></li>
+                            <li><a href="/info-akademik#">Info Akademik</a></li>
                         </ul>
                     </div>
 

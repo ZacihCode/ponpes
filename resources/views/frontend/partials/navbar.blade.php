@@ -196,11 +196,6 @@
                     </a>
 
                 </div>
-
-            </li>
-
-            <li class="nav-item">
-                <a href="/galeri" class="nav-link">Galeri</a>
             </li>
 
             <li class="nav-item">
