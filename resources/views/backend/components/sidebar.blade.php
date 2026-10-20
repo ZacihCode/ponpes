@@ -123,19 +123,6 @@
                             </ul>
                         </li>
 
-                        {{-- Karakter --}}
-                        <li class="nav-item">
-
-                            <a href="{{ route('admin.character-section.index') }}"
-                                class="nav-link {{ request()->routeIs('admin.character-section.*') ? 'active' : '' }}">
-
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Karakter</p>
-
-                            </a>
-
-                        </li>
-
                         {{-- Statistik --}}
                         <li class="nav-item">
 
@@ -148,20 +135,6 @@
                             </a>
 
                         </li>
-
-                        {{-- Organisasi --}}
-                        <li class="nav-item">
-
-                            <a href="{{ route('admin.organisasi-santri.index') }}"
-                                class="nav-link {{ request()->routeIs('admin.organisasi-santri.*') ? 'active' : '' }}">
-
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Organisasi</p>
-
-                            </a>
-
-                        </li>
-
                     </ul>
 
                 </li>

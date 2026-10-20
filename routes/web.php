@@ -95,9 +95,6 @@ Route::get('/produk', [FrontendProdukController::class, 'index'])->name('produk.
 //     return view('frontend.organisasi');
 // });
 
-// Halaman Organisasi
-Route::get('/organisasi', [OrganisasiController::class, 'index']);
-
 // Halaman "Berita Lainnya" — tombol di homepage
 Route::get('/berita', [FrontendBeritaController::class, 'index'])->name('berita.index');
  
