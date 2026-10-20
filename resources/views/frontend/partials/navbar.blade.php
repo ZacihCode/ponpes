@@ -95,10 +95,6 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="/galeri" class="nav-link">Galeri</a>
-                </li>
-
-                <li class="nav-item">
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcEETjlBN35niw77MvMrN6IipZndPxonbDfFXMOQUlo0smog/viewform?usp=dialog" class="nav-link">Pendaftaran</a>
                 </li>
 

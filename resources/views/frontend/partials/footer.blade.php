@@ -35,8 +35,8 @@
                     <div class="col-4 mb-4">
                         <h5 class="footer-title">Tentang Santri</h5>
                         <ul class="footer-links">
-                            <li><a href="#">Info Santri</a></li>
-                            <li><a href="#">Info Alumni</a></li>
+                            <li><a href="/info-santri">Info Santri</a></li>
+                            <li><a href="/info-alumni">Info Alumni</a></li>
                         </ul>
                     </div>
                 </div>
