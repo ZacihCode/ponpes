@@ -43,7 +43,6 @@
 
         <div class="btn-container">
             <a href="#sebaran-alumni" class="btn-alumni-primary">Sebaran Alumni</a>
-            <a href="#kiprah-alumni" class="btn-alumni-outline">Kiprah Alumni</a>
         </div>
 
     </div>

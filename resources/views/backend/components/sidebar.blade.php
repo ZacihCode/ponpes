@@ -250,7 +250,7 @@
 
                 <!-- ================= PENDAFTARAN ================= -->
                 <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcEETjlBN35niw77MvMrN6IipZndPxonbDfFXMOQUlo0smog/viewform?usp=dialog" class="nav-link">
                         <i class="nav-icon fas fa-user-plus"></i>
 
                         <p>
